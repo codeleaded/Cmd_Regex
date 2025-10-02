@@ -4,7 +4,7 @@
 int main(){
     Regex rx = Regex_New("\\d\\d");
 
-    Regex_Do(&rx,"01");
+    Regex_Do(&rx,"0 1");
     //Regex_DoFile(&rx,"01");
 
     Regex_Print(&rx);
