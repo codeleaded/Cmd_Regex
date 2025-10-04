@@ -2,9 +2,9 @@
 #include "/home/codeleaded/System/Static/Library/Regex.h"
 
 int main(){
-    Regex rx = Regex_New("[a-z,A-Z]* \"@\" [a-z,A-Z]* \".\" [a-z,A-Z]*");
+    Regex rx = Regex_Make("[a-z,A-Z]* \"@\" [a-z,A-Z]* \".\" [a-z,A-Z]*");
 
-    Regex_Do(&rx," 1");
+    Regex_Do(&rx,"alexbehringer@kbehringer.de");
     //Regex_DoFile(&rx,"01");
 
     Regex_Print(&rx);
