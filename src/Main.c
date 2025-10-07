@@ -4,7 +4,7 @@
 int main(){
     //Regex rx = Regex_Make("a \"@\" a \".\" a");
     //Regex rx = Regex_Make("[a-z,A-Z]* \"@\" [a-z,A-Z]* \".\" [a-z,A-Z]*");
-    Regex rx = Regex_Make("A*B*");
+    Regex rx = Regex_Make("A-M*N-Z*");
 
     Regex_Do(&rx,"AAABBBBAABBBABAABBBBBABABABBBB");
     //Regex_DoFile(&rx,"./data/File.txt");
