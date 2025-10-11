@@ -4,7 +4,7 @@
 int main(){
     //Regex rx = Regex_Make("a \"@\" a \".\" a");
     //Regex rx = Regex_Make("[a-z,A-Z]* \"@\" [a-z,A-Z]* \".\" [a-z,A-Z]*");
-    Regex rx = Regex_Make("[A-D,P-Z]*E");
+    //Regex rx = Regex_Make("[A-D,P-Z]*E");
     Regex rx = Regex_Make("[A-D,P-Z]{1,2}E");
 
     Regex_Do(&rx,"AE BBE CZCE ALE PPE WWRT ABCE ABCDE");
