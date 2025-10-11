@@ -7,9 +7,12 @@ int main(){
     //Regex rx = Regex_Make("[A-D,P-Z]*E");
     //Regex rx = Regex_Make("[A-D,P-Z]{1,2}E");
     //Regex rx = Regex_Make("[c,C][o,O][l,L][o,O]\"u\"?[r,R]");
+    //Regex rx = Regex_Make("(Hallo,\" \",Welt,\' \'-z?)+");
 
     //Regex_Do(&rx,"AE BBE CZCE ALE PPE WWRT ABCE ABCDE");
     //Regex_Do(&rx,"Color color coluor colour colorucolouru");
+    //Regex_Do(&rx,"Hallo Welt Hallo WeltHallo Welt  Hallo Welt Hallo  Welt Hallo Welt  Hallo Welt");
+    
     //Regex_DoFile(&rx,"./data/Cartag.txt");
     Regex_DoFile(&rx,"./data/Emails.txt");
 
