@@ -3,12 +3,13 @@
 
 int main(){
     //Regex rx = Regex_Make("a \"@\" a \".\" a");
-    //Regex rx = Regex_Make("[a-z,A-Z]* \"@\" [a-z,A-Z]* \".\" [a-z,A-Z]*");
+    //Regex rx = Regex_Make("[a-z,A-Z]+ \"@\" [a-z,A-Z]+ \".\" [a-z,A-Z]+");
     //Regex rx = Regex_Make("[A-D,P-Z]*E");
-    Regex rx = Regex_Make("[A-D,P-Z]{1,2}E");
+    //Regex rx = Regex_Make("[A-D,P-Z]{1,2}E");
+    Regex rx = Regex_Make("[A-D,P-Z]*E");
 
-    Regex_Do(&rx,"AE BBE CZCE ALE PPE WWRT ABCE ABCDE");
-    //Regex_DoFile(&rx,"./data/File.txt");
+    //Regex_Do(&rx,"AE BBE CZCE ALE PPE WWRT ABCE ABCDE");
+    Regex_DoFile(&rx,"./data/Cartag.txt");
 
     Regex_Print(&rx);
     Regex_Free(&rx);
